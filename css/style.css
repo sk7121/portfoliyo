@@ -1,0 +1,231 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #a4b1ec;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    background-color: rgb(29, 29, 87);
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+.nav-link{
+    transition: 1s;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    flex:1;
+    min-height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.nav-link:hover{
+    background-color: #ccdcd5;
+}
+
+.nav-link.active{
+    background-color: #23c378;
+}
+
+#profile-image{
+    width: 500px;
+    min-width:350px;
+    min-height:350px;
+    height: 500px;
+    border-radius: 50%;
+    box-shadow: -20px 0px 0px 20px #2f50eb;
+}
+
+.info{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 20vh 0vh;
+}
+
+.details{
+    color: #2f50eb;
+}
+
+.details h1{
+    color: blue;
+}
+
+hr{
+    width: 98vw;
+}
+
+
+
+h1{
+    color: #0331fd;
+}
+h2{
+    color: #2f50eb;
+}
+h3{
+    color: #5f7aef;
+}
+h4{
+    color: #a4b1ec;
+}
+.education img, .skills img{
+    width: 300px;
+}
+.education{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    min-width: 97vw;
+    min-height: 80vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+    font-family: Arial, sans-serif;
+    gap: 20%;
+}
+
+.edu-texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family:'Times New Roman', Times, serif;
+    min-height: 100%;
+}
+
+.skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    min-width: 97vw;
+    min-height: 80vh;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20vh;
+    overflow-y: auto;
+}
+
+.skills-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    min-height: 100%;
+    max-width: 100%;
+    overflow-y: auto;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.skills-texts h1{
+    align-self: center;
+}
+
+.skills-texts table{
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    gap: 20%;
+    margin: 20vh 0vh;
+}
+
+.project-boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 73vw;
+    flex-wrap:wrap;
+}
+
+.project-1, .project-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-1 img, .project-2 img{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+
+.section {
+    scroll-margin-top: 80px;
+    flex-wrap: wrap;
+    min-width: 350px;
+    min-height: 80vh;
+}
+
+.about-me{
+    min-height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: rgb(15, 13, 13);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+.about-me h1, .about-me h2, .about-me h3, .about-me h4{
+    color: white;
+    margin: 2px;
+    padding: 2px;
+    text-align: center;
+
+}
+.about-me p, .about-me span, .about-me a{
+    margin: 2px;
+    padding: 2px;
+    color: white;
+}
+
+.about-me-personal-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    flex-wrap: wrap;
+}
