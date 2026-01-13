@@ -99,16 +99,19 @@ hr{
 
 
 h1{
-    color: #0331fd;
+    color: #036ffd;
 }
 h2{
-    color: #2f50eb;
+    color: #2f90eb;
 }
 h3{
-    color: #5f7aef;
+    color: #5fefc1;
 }
 h4{
-    color: #a4b1ec;
+    color: #ece9a4;
+}
+span{
+    color: #de9762;
 }
 .education img, .skills img{
     width: 300px;
@@ -173,6 +176,11 @@ h4{
 th, td{
     border: 1px solid black;
     padding: 10px;
+}
+
+th{
+    background-color: #2f50eb;
+    color: white;
 }
 
 .projects{
