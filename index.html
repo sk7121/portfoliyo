@@ -4,138 +4,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Saurav Kumar Sharma | Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/a81368914c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div id="navbar">
-        <a class="nav-link" href="#personal">Personal info</a>
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <a class="nav-link" href="#personal">Personal</a>
         <a class="nav-link" href="#education">Education</a>
         <a class="nav-link" href="#skills">Skills</a>
         <a class="nav-link" href="#projects">Projects</a>
-    </div>
+        <a class="nav-link" href="#about">About Me</a>
+        <button id="dark-mode-toggle"><i class="fas fa-moon"></i></button>
+    </nav>
 
-    <div class="info section" id="personal">
+    <!-- PERSONAL INFO -->
+    <section class="info section" id="personal">
         <div class="details">
-            <div>
-                <h2>My name is</h2>
-                <h1 class="h1s">Saurav Kumar Sharma.</h1>
-                <h2>And I'm a</h2>
-                <h1 id="job" class="h1s">Web Developer.</h1>
-            </div>
-
-            <div class="resume">
-                <a href="assets/resume/my_Resume.pdf" download class="resume-btn" target="_blank"
-                    rel="noopener noreferrer">Download Resume</a>
-                <a href="https://github.com/sk7121/" download class="github-btn" target="_blank"
-                    rel="noopener noreferrer">Visit GitHub</a>
+            <h2>My name is</h2>
+            <h1 class="h1s">Saurav Kumar Sharma</h1>
+            <h2>And I'm a</h2>
+            <h1 id="job" class="h1s">Web Developer</h1>
+            <div class="buttons">
+                <a href="assets/resume/my_Resume.pdf" class="btn" target="_blank">Download Resume</a>
+                <a href="https://github.com/sk7121/" class="btn" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/sksharma19121/" class="btn" target="_blank">LinkedIn</a>
             </div>
         </div>
-        <img id="profile-image" src="assets\images\developer.png" alt="developer.png">
-    </div>
-    <hr>
-
-    <div class="education section" id="education">
-        <img src="assets\images\education.png" alt="education.png">
-        <div class="edu-texts">
-            <h1 style="text-decoration: underline; color: rgb(248, 122, 4);">Educations</h1>
-            <h2>I have completed my schooling from <span>RBSE Board</span>.</h2>
-            <h2>I am currently pursuing my Bachelor's degree </h2>
-            <h2> in <span>Information Technology</span> from
-                <span>RTU</span>.
-            </h2>
-            <h2>passing year <span>2027</span>.</h2>
+        <div class="profile-img">
+            <img src="assets/images/developer.png" alt="Profile Image">
         </div>
-    </div>
+    </section>
 
     <hr>
 
-
-    <div class="skills section" id="skills">
-        <img src="assets\images\skills.png" alt="skills.png">
-        <div class="skills-texts">
-            <h1 style="color: chocolate; text-decoration: underline;">Skills</h1>
-
-            <table>
-                <tr>
-                    <th>Frontend</th>
-                    <th>Backend</th>
-                    <th>Database</th>
-                    <th>Languages</th>
-                    <th>Frameworks</th>
-                </tr>
-                <tr>
-                    <td>HTML</td>
-                    <td>Node.js</td>
-                    <td>MongoDB</td>
-                    <td>C++</td>
-                    <td>Bootstrap</td>
-                </tr>
-                <tr>
-                    <td>CSS</td>
-                    <td>Express.js</td>
-                    <td>SQL</td>
-                    <td>Java</td>
-                    <td>React</td>
-                </tr>
-                <tr>
-                    <td>JavaScript</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>Tailwind</td>
-                </tr>
-                <tr>
-                    <td>React.js</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-
-            </table>
-
+    <!-- EDUCATION -->
+    <section class="education section" id="education">
+        <h1>Education</h1>
+        <div class="edu-container">
+            <div class="edu-card">
+                <i class="fas fa-graduation-cap edu-icon"></i>
+                <h2>RBSE Board</h2>
+                <p>Completed Schooling</p>
+            </div>
+            <div class="edu-card">
+                <i class="fas fa-university edu-icon"></i>
+                <h2>RTU, Jaipur</h2>
+                <p>B.Tech in Information Technology (2023-2027)</p>
+            </div>
         </div>
-
-    </div>
+    </section>
 
     <hr>
 
-
-    <div class="projects section" id="projects">
-        <h1 style="color: rgb(41, 114, 216); text-decoration: underline;">Projects</h1>
-
-        <div class="project-boxes">
-            <div class="project-1">
-                <a href="https://interview-prep-avki.onrender.com/" class="project1-btn" target="_blank"
-                    rel="noopener noreferrer">Visit
-                    Project 1</a>
-                <img src="assets\images\interview-prep.png" alt="interview-prep.png">
-                <h2>Interview Preparation Platform</h2>
+    <!-- SKILLS -->
+    <section class="skills section" id="skills">
+        <h1>Skills</h1>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>HTML</h3>
+                <div class="skill-bar" data-level="95%">
+                    <div class="skill-fill"></div>
+                </div>
             </div>
-
-            <div class="project-2">
-                <a href="https://typing-teacher.onrender.com/" class="project2-btn" target="_blank"
-                    rel="noopener noreferrer">Visit Project 2</a>
-                <img src="assets\images\typing.png" alt="typing.png">
-                <h2>Typing Website</h2>
+            <div class="skill">
+                <h3>CSS</h3>
+                <div class="skill-bar" data-level="90%">
+                    <div class="skill-fill"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <div class="skill-bar" data-level="85%">
+                    <div class="skill-fill"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>React.js</h3>
+                <div class="skill-bar" data-level="80%">
+                    <div class="skill-fill"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Node.js</h3>
+                <div class="skill-bar" data-level="85%">
+                    <div class="skill-fill"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Express.js</h3>
+                <div class="skill-bar" data-level="80%">
+                    <div class="skill-fill"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>MongoDB</h3>
+                <div class="skill-bar" data-level="75%">
+                    <div class="skill-fill"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>SQL</h3>
+                <div class="skill-bar" data-level="70%">
+                    <div class="skill-fill"></div>
+                </div>
             </div>
         </div>
+    </section>
 
-    </div>
+    <hr>
 
-    <div class="about-me">
-        <h1>about me</h1>
-        <hr>
-        <div class="about-me-personal-info">
-            <h3>Name: Saurav Kumar Sharma</h3>
-            <h3>Email: <a href="mailto:sksharma19121@gmail.com">sksharma19121@gmail.com</a></h3>
-            <h3>Phone: +91-9509081469</h3>
-            <h3>Address: <span>Jaipur, Rajasthan</span></h3>
+    <!-- PROJECTS -->
+    <section class="projects section" id="projects">
+        <h1>Projects</h1>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="assets/images/interview-prep.png" alt="Project 1">
+                        <h2>Interview Prep Platform</h2>
+                    </div>
+                    <div class="card-back">
+                        <p>Platform to prepare for interviews with practice questions and tips.</p>
+                        <a href="https://interview-prep-avki.onrender.com/" target="_blank" class="btn">Visit
+                            Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="assets/images/typing.png" alt="Project 2">
+                        <h2>Typing Website</h2>
+                    </div>
+                    <div class="card-back">
+                        <p>Interactive typing tutor to improve speed and accuracy.</p>
+                        <a href="https://typing-teacher.onrender.com/" target="_blank" class="btn">Visit Project</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <hr>
-    </div>
+    </section>
+
+    <hr>
+
+    <!-- ABOUT ME -->
+    <section class="about section" id="about">
+        <h1>About Me</h1>
+        <div class="about-container">
+            <p>Hello! I'm <strong>Saurav Kumar Sharma</strong>, a passionate full-stack web developer focused on
+                building engaging web applications. I love exploring new technologies and creating interactive
+                experiences on the web.</p>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> <a href="mailto:sksharma19121@gmail.com">sksharma19121@gmail.com</a>
+                </p>
+                <p><i class="fas fa-phone"></i> +91-9509081469</p>
+                <p><i class="fas fa-map-marker-alt"></i> Jaipur, Rajasthan</p>
+            </div>
+        </div>
+    </section>
 
     <script src="./js/main.js"></script>
 </body>
